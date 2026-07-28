@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite)
+![SQL](https://img.shields.io/badge/SQL-Analytics-336791?logo=postgresql)
 ![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git)
 ![Build in Public](https://img.shields.io/badge/Build-In_Public-success)
 
@@ -12,52 +13,57 @@
 
 ---
 
-## 📌 Project Vision
+# 📌 Project Vision
 
 Choosing a career shouldn't require searching through hundreds of web pages.
 
-This project aims to build an intelligent assistant capable of answering questions such as:
+The goal of this project is to transform the official **O*NET occupational database** into an intelligent career assistant capable of answering questions such as:
 
 - What skills are required for a Data Scientist?
 - Which occupations are most similar?
 - What career path should I follow?
 - Which skills should I learn next?
-- What jobs align with my interests?
+- What jobs best align with my interests?
 
-The platform is built using the official O*NET occupational database and will evolve into a fully interactive AI-powered career advisor.
+Rather than jumping straight into AI, this project focuses on building a strong data foundation first. Every stage—from data profiling to database design, analytics, and AI—is being developed incrementally using software engineering best practices.
 
 ---
 
-## 🏗 Current Architecture
+# 🏗 Current Architecture
 
 ```text
-O*NET CSV Files
-        │
-        ▼
- Automated Data Profiling
-        │
-        ▼
- Column-Level Metadata
-        │
-        ▼
- SQLite Database
-        │
-        ▼
- SQL Analytics
-        │
-        ▼
- Power BI Dashboard
-        │
-        ▼
- AI Career Intelligence Assistant
+                  O*NET CSV Files
+                         │
+                         ▼
+           Automated Data Profiling
+                         │
+                         ▼
+            Column-Level Metadata
+                         │
+                         ▼
+             SQLite Relational Database
+                         │
+                         ▼
+                SQL Analytics Layer
+                         │
+                         ▼
+              Power BI Dashboards
+                         │
+                         ▼
+        AI Career Intelligence Assistant
 ```
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 AI-Career-Intelligence/
+│
+├── assets/
+│   ├── banner.png
+│   ├── profile-summary.png
+│   └── column-profile.png
 │
 ├── data/
 │   ├── raw/
@@ -81,7 +87,7 @@ AI-Career-Intelligence/
 
 ---
 
-## 🚀 Project Status
+# 🚀 Project Status
 
 | Milestone | Status |
 |------------|--------|
@@ -94,20 +100,20 @@ AI-Career-Intelligence/
 | Duplicate Detection | ✅ Complete |
 | Automated Report Generation | ✅ Complete |
 | SQLite Database | 🔄 Next |
-| SQL Analytics | ⏳ Planned |
-| Power BI Dashboard | ⏳ Planned |
-| RAG Pipeline | ⏳ Planned |
+| SQL Analytics Layer | ⏳ Planned |
+| Power BI Dashboards | ⏳ Planned |
+| Retrieval-Augmented Generation (RAG) | ⏳ Planned |
 | AI Career Intelligence Assistant | ⏳ Planned |
 
 ---
 
----
+# 📊 Project Output
 
-## 📊 Project Output
+The following reports are generated automatically by the Python profiling pipeline developed in **Part 1**.
 
-### File-Level Data Profiling
+## File-Level Data Profiling
 
-The pipeline automatically profiles every O*NET dataset and generates a summary report containing:
+The pipeline analyzes every O*NET dataset and automatically generates a report containing:
 
 - Number of rows
 - Number of columns
@@ -119,9 +125,9 @@ The pipeline automatically profiles every O*NET dataset and generates a summary 
 
 ---
 
-### Column-Level Data Profiling
+## Column-Level Data Profiling
 
-The pipeline also profiles every column across all datasets, capturing:
+The pipeline also profiles every column across all datasets, reporting:
 
 - Data type
 - Missing values
@@ -131,38 +137,60 @@ The pipeline also profiles every column across all datasets, capturing:
 
 ![Column Profile](assets/column-profile.png)
 
-## 🚧 Upcoming Milestones
-
-- [ ] SQLite database
-- [ ] Relational schema design
-- [ ] SQL analytics layer
-- [ ] Power BI dashboard
-- [ ] FastAPI backend
-- [ ] Embedding generation
-- [ ] RAG pipeline
-- [ ] AI Career Intelligence Assistant
-- [ ] Deployment
-
 ---
 
-## 🛠 Tech Stack
+# 🛠 Tech Stack
+
+### Languages
 
 - Python
-- Pandas
-- SQLite
 - SQL
-- Power BI
-- FastAPI *(coming soon)*
-- Vertex AI / OpenAI *(coming soon)*
-- RAG
-- Git & GitHub
+
+### Data Processing
+
+- Pandas
+- SQLite *(coming next)*
+
+### Analytics & Visualization
+
+- Power BI *(planned)*
+
+### Artificial Intelligence
+
+- Retrieval-Augmented Generation (RAG) *(planned)*
+- Large Language Models *(planned)*
+- FastAPI *(planned)*
+
+### Development
+
+- Git
+- GitHub
 
 ---
 
-## 📈 Build in Public
+# 🎯 Project Goals
 
-This repository is being developed publicly.
+This project is designed to demonstrate end-to-end AI and data engineering skills, including:
 
-Each milestone is documented through LinkedIn posts, GitHub commits, and project updates from the very first line of code to the final AI application.
+- Data Engineering
+- Data Profiling
+- Relational Database Design
+- SQL Analytics
+- Business Intelligence
+- Retrieval-Augmented Generation (RAG)
+- AI Application Development
+- Software Engineering Best Practices
 
-Stay tuned!
+---
+
+# 🤝 Build in Public
+
+This repository is being developed publicly from the ground up.
+
+Instead of showcasing only the finished product, every milestone—from raw occupational datasets to a fully functional AI Career Intelligence Platform—is documented through GitHub commits and LinkedIn project updates.
+
+The goal is to share not only **what** was built, but also **how** it was built and the engineering decisions behind it.
+
+If you're interested in AI, Data Science, Data Engineering, Analytics, or Software Engineering, feel free to follow the journey and share your feedback.
+
+⭐ If you find this project interesting, consider starring the repository.
