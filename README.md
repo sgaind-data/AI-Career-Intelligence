@@ -1,5 +1,11 @@
 # 🚀 AI Career Intelligence Platform
 
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite)
+![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git)
+![Build in Public](https://img.shields.io/badge/Build-In_Public-success)
+
 > Transforming 45 O*NET datasets into an AI-powered Career Intelligence Platform using Python, SQL, SQLite, Power BI, Retrieval-Augmented Generation (RAG), and Large Language Models.
 
 ---
