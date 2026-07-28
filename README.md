@@ -6,6 +6,8 @@
 ![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git)
 ![Build in Public](https://img.shields.io/badge/Build-In_Public-success)
 
+![AI Career Intelligence Banner](assets/banner.png)
+
 > Transforming 45 O*NET datasets into an AI-powered Career Intelligence Platform using Python, SQL, SQLite, Power BI, Retrieval-Augmented Generation (RAG), and Large Language Models.
 
 ---
