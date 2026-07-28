@@ -101,6 +101,36 @@ AI-Career-Intelligence/
 
 ---
 
+---
+
+## 📊 Project Output
+
+### File-Level Data Profiling
+
+The pipeline automatically profiles every O*NET dataset and generates a summary report containing:
+
+- Number of rows
+- Number of columns
+- Missing values
+- Duplicate rows
+- Memory usage
+
+![Profile Summary](assets/profile-summary.png)
+
+---
+
+### Column-Level Data Profiling
+
+The pipeline also profiles every column across all datasets, capturing:
+
+- Data type
+- Missing values
+- Missing percentage
+- Unique values
+- Sample values
+
+![Column Profile](assets/column-profile.png)
+
 ## 🚧 Upcoming Milestones
 
 - [ ] SQLite database
