@@ -4,10 +4,19 @@ import pandas as pd
 from config import OUTPUT_PATH
 from loader import get_csv_files, load_csv
 from profiler import profile_dataframe, profile_columns
+from database import create_database, load_table
+
 
 if __name__ == "__main__":
 
+    # -----------------------------
+    # Connect to SQLite database
+    # -----------------------------
+    connection = create_database()
+
+    # -----------------------------
     # Step 1: Get all CSV files
+    # -----------------------------
     csv_files = get_csv_files()
 
     # Store file-level profiles
@@ -16,10 +25,18 @@ if __name__ == "__main__":
     # Store column-level profiles
     all_column_profiles = []
 
+    # -----------------------------
     # Step 2: Process every CSV
+    # -----------------------------
     for file in csv_files:
 
         dataframe = load_csv(file)
+
+        # Convert filename to table name
+        table_name = os.path.splitext(file)[0]
+
+        # Load DataFrame into SQLite
+        load_table(connection, dataframe, table_name)
 
         # File-level profile
         profile = profile_dataframe(dataframe, file)
@@ -34,7 +51,7 @@ if __name__ == "__main__":
     # -----------------------------
     summary_df = pd.DataFrame(all_profiles)
 
-    os.makedirs("outputs", exist_ok=True)
+    os.makedirs(OUTPUT_PATH, exist_ok=True)
 
     summary_df.to_csv(
         "outputs/profile_summary.csv",
@@ -56,3 +73,9 @@ if __name__ == "__main__":
 
     print("\n✅ Column Profile Created")
     print("📄 outputs/column_profile.csv")
+
+    # -----------------------------
+    # Close database connection
+    # -----------------------------
+    connection.close()
+    print("\n✅ Database connection closed.")

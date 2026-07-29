@@ -13,3 +13,6 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# SQLite databases
+data/database/*.db
