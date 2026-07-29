@@ -9,7 +9,7 @@
 
 ![AI Career Intelligence Banner](assets/banner.png)
 
-> Transforming 45 O*NET datasets into an AI-powered Career Intelligence Platform using Python, SQL, SQLite, Power BI, Retrieval-Augmented Generation (RAG), and Large Language Models.
+> Transforming 41 O*NET datasets into an AI-powered Career Intelligence Platform using Python, SQL, SQLite, Power BI, Retrieval-Augmented Generation (RAG), and Large Language Models.
 
 ---
 
@@ -35,19 +35,23 @@ Rather than jumping straight into AI, this project focuses on building a strong 
                   O*NET CSV Files
                          │
                          ▼
-           Automated Data Profiling
+              Automated Data Profiling
                          │
                          ▼
-            Column-Level Metadata
+             Data Quality Validation
+                         │
+                         ▼
+              SQLite ETL Pipeline
                          │
                          ▼
              SQLite Relational Database
+                  (41 Tables)
                          │
                          ▼
                 SQL Analytics Layer
                          │
                          ▼
-              Power BI Dashboards
+               Power BI Dashboards
                          │
                          ▼
         AI Career Intelligence Assistant
@@ -78,6 +82,7 @@ AI-Career-Intelligence/
 │   ├── config.py
 │   ├── loader.py
 │   ├── profiler.py
+│   ├── database.py
 │   └── main.py
 │
 ├── README.md
@@ -99,8 +104,9 @@ AI-Career-Intelligence/
 | Missing Value Analysis | ✅ Complete |
 | Duplicate Detection | ✅ Complete |
 | Automated Report Generation | ✅ Complete |
-| SQLite Database | 🔄 Next |
-| SQL Analytics Layer | ⏳ Planned |
+| SQLite ETL Pipeline | ✅ Complete |
+| SQLite Database (41 Tables) | ✅ Complete |
+| SQL Analytics Layer | 🚧 In Progress |
 | Power BI Dashboards | ⏳ Planned |
 | Retrieval-Augmented Generation (RAG) | ⏳ Planned |
 | AI Career Intelligence Assistant | ⏳ Planned |
@@ -109,11 +115,11 @@ AI-Career-Intelligence/
 
 # 📊 Project Output
 
-The following reports are generated automatically by the Python profiling pipeline developed in **Part 1**.
+The Python profiling pipeline automatically analyzes every O*NET dataset and generates comprehensive profiling reports.
 
 ## File-Level Data Profiling
 
-The pipeline analyzes every O*NET dataset and automatically generates a report containing:
+The pipeline reports:
 
 - Number of rows
 - Number of columns
@@ -127,7 +133,7 @@ The pipeline analyzes every O*NET dataset and automatically generates a report c
 
 ## Column-Level Data Profiling
 
-The pipeline also profiles every column across all datasets, reporting:
+The pipeline also profiles every column, including:
 
 - Data type
 - Missing values
@@ -139,29 +145,74 @@ The pipeline also profiles every column across all datasets, reporting:
 
 ---
 
+# 🗄 SQLite Database
+
+The project now includes a complete ETL pipeline that automatically converts the raw O*NET CSV datasets into a relational SQLite database.
+
+Current capabilities include:
+
+- Automatic SQLite database creation
+- Loading all **41** datasets into relational tables
+- Rebuilding the database whenever the pipeline is executed
+- Providing the foundation for SQL analytics and future AI applications
+
+This milestone marks the completion of the project's first end-to-end ETL pipeline.
+
+---
+
+# 🚀 Getting Started
+
+## Clone the repository
+
+```bash
+git clone https://github.com/sgaind-data/AI-Career-Intelligence.git
+cd AI-Career-Intelligence
+```
+
+## Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run the project
+
+```bash
+python src/main.py
+```
+
+Running the pipeline will automatically:
+
+- Discover all O*NET datasets
+- Generate data profiling reports
+- Build a SQLite database
+- Populate 41 relational tables
+
+---
+
 # 🛠 Tech Stack
 
-### Languages
+## Languages
 
 - Python
 - SQL
 
-### Data Processing
+## Data Processing
 
 - Pandas
-- SQLite *(coming next)*
+- SQLite
 
-### Analytics & Visualization
+## Analytics & Visualization
 
 - Power BI *(planned)*
 
-### Artificial Intelligence
+## Artificial Intelligence
 
 - Retrieval-Augmented Generation (RAG) *(planned)*
 - Large Language Models *(planned)*
 - FastAPI *(planned)*
 
-### Development
+## Development
 
 - Git
 - GitHub
@@ -170,9 +221,10 @@ The pipeline also profiles every column across all datasets, reporting:
 
 # 🎯 Project Goals
 
-This project is designed to demonstrate end-to-end AI and data engineering skills, including:
+This project demonstrates an end-to-end modern data and AI workflow, including:
 
 - Data Engineering
+- ETL Pipeline Development
 - Data Profiling
 - Relational Database Design
 - SQL Analytics
@@ -183,14 +235,29 @@ This project is designed to demonstrate end-to-end AI and data engineering skill
 
 ---
 
+# 🚀 Upcoming Milestones
+
+- ✅ Data Profiling
+- ✅ SQLite ETL Pipeline
+- ⏳ SQL Analytics
+- ⏳ Data Warehouse Views
+- ⏳ Power BI Dashboards
+- ⏳ Semantic Search
+- ⏳ Vector Database
+- ⏳ Retrieval-Augmented Generation (RAG)
+- ⏳ AI Career Intelligence Assistant
+- ⏳ FastAPI Deployment
+
+---
+
 # 🤝 Build in Public
 
 This repository is being developed publicly from the ground up.
 
-Instead of showcasing only the finished product, every milestone—from raw occupational datasets to a fully functional AI Career Intelligence Platform—is documented through GitHub commits and LinkedIn project updates.
+Rather than showcasing only the finished product, every milestone—from raw occupational datasets to a fully functional AI Career Intelligence Platform—is documented through GitHub commits and LinkedIn updates.
 
-The goal is to share not only **what** was built, but also **how** it was built and the engineering decisions behind it.
+The goal is to share not only **what** was built, but also **how** it was built, the challenges encountered, and the engineering decisions made along the way.
 
-If you're interested in AI, Data Science, Data Engineering, Analytics, or Software Engineering, feel free to follow the journey and share your feedback.
+If you're interested in AI, Data Science, Data Engineering, Analytics, or Software Engineering, feel free to follow the journey, share feedback, or contribute ideas.
 
-⭐ If you find this project interesting, consider starring the repository.
+⭐ If you find this project interesting, consider giving it a star.
