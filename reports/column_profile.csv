@@ -1,0 +1,331 @@
+File Name,Column Name,Data Type,Missing Values,Missing %,Unique Values,Sample Value
+job_zones.csv,O*NET-SOC Code,str,0,0.0,923,11-1011.00
+job_zones.csv,Title,str,0,0.0,923,Chief Executives
+job_zones.csv,Job Zone,int64,0,0.0,4,5
+job_zones.csv,Date,str,0,0.0,20,08/2023
+job_zones.csv,Domain Source,str,0,0.0,2,Analyst
+specific_interest_areas.csv,O*NET-SOC Code,str,0,0.0,891,11-1011.00
+specific_interest_areas.csv,Title,str,0,0.0,891,Chief Executives
+specific_interest_areas.csv,Element ID,str,0,0.0,41,1.B.3.a
+specific_interest_areas.csv,Element Name,str,0,0.0,41,Mechanics/Electronics
+specific_interest_areas.csv,Scale ID,str,0,0.0,2,DS
+specific_interest_areas.csv,Scale Name,str,0,0.0,2,Summary Display Rank
+specific_interest_areas.csv,Data Value,float64,0,0.0,594,0.0
+specific_interest_areas.csv,Date,str,0,0.0,1,05/2026
+specific_interest_areas.csv,Domain Source,str,0,0.0,1,AI/Expert
+career_interest_type_keywords.csv,Element ID,str,0,0.0,6,1.B.1.a
+career_interest_type_keywords.csv,Element Name,str,0,0.0,6,Realistic
+career_interest_type_keywords.csv,Keyword,str,0,0.0,75,Build
+career_interest_type_keywords.csv,Keyword Type,str,0,0.0,2,Action
+specific_interest_areas_to_career_interest_types.csv,Specific Interest Areas Element ID,str,0,0.0,41,1.B.3.a
+specific_interest_areas_to_career_interest_types.csv,Specific Interest Areas Element Name,str,0,0.0,41,Mechanics/Electronics
+specific_interest_areas_to_career_interest_types.csv,Career Interest Types Element ID,str,0,0.0,6,1.B.1.a
+specific_interest_areas_to_career_interest_types.csv,Career Interest Types Element Name,str,0,0.0,6,Realistic
+education.csv,O*NET-SOC Code,str,0,0.0,878,11-1011.00
+education.csv,Title,str,0,0.0,878,Chief Executives
+education.csv,Element ID,str,0,0.0,2,2.D.1
+education.csv,Element Name,str,0,0.0,2,Required Level of Education
+education.csv,Scale ID,str,0,0.0,2,RL
+education.csv,Scale Name,str,0,0.0,2,Required Level Of Education (Categories 1-12)
+education.csv,Category,float64,564,5.08,12,1.0
+education.csv,Data Value,float64,0,0.0,2463,0.0
+education.csv,N,int64,0,0.0,58,28
+education.csv,Standard Error,float64,2720,24.5,3517,0.0
+education.csv,Lower CI Bound,float64,7477,67.36,3457,0.6307
+education.csv,Upper CI Bound,float64,7477,67.36,3564,25.5524
+education.csv,Recommend Suppress,str,2720,24.5,2,N
+education.csv,Date,str,0,0.0,22,08/2023
+education.csv,Domain Source,str,0,0.0,2,Incumbent
+work_context.csv,O*NET-SOC Code,str,0,0.0,894,11-1011.00
+work_context.csv,Title,str,0,0.0,894,Chief Executives
+work_context.csv,Element ID,str,0,0.0,57,4.C.1.a.2.c
+work_context.csv,Element Name,str,0,0.0,57,Public Speaking
+work_context.csv,Scale ID,str,0,0.0,4,CX
+work_context.csv,Scale Name,str,0,0.0,3,Context
+work_context.csv,Category,float64,50958,17.12,5,1.0
+work_context.csv,Data Value,float64,0,0.0,9887,3.07
+work_context.csv,N,float64,912,0.31,81,37.0
+work_context.csv,Standard Error,float64,71892,24.15,93142,0.2851
+work_context.csv,Lower CI Bound,float64,114452,38.45,102509,2.4923
+work_context.csv,Upper CI Bound,float64,114452,38.45,139805,3.6486
+work_context.csv,Recommend Suppress,str,71037,23.86,2,N
+work_context.csv,Not Relevant,float64,297676,100.0,0,No Data
+work_context.csv,Date,str,0,0.0,23,08/2023
+work_context.csv,Domain Source,str,0,0.0,3,Incumbent
+essential_skills_to_work_activities.csv,Essential Skills Element ID,str,0,0.0,9,2.A.1.a
+essential_skills_to_work_activities.csv,Essential Skills Element Name,str,0,0.0,9,Reading Comprehension
+essential_skills_to_work_activities.csv,Work Activities Element ID,str,0,0.0,37,4.A.1.a.1
+essential_skills_to_work_activities.csv,Work Activities Element Name,str,0,0.0,37,Getting Information
+emerging_tasks.csv,O*NET-SOC Code,str,0,0.0,235,11-2022.00
+emerging_tasks.csv,Title,str,0,0.0,235,Sales Managers
+emerging_tasks.csv,Task,str,0,0.0,327,Coach staff on sales tactics.
+emerging_tasks.csv,Category,str,0,0.0,2,New
+emerging_tasks.csv,Original Task ID,float64,275,83.84,52,21280.0
+emerging_tasks.csv,Original Task,str,275,83.84,52,"Plan, administer, and control budgets for contracts, equipment, and supplies."
+emerging_tasks.csv,Date,str,0,0.0,18,08/2025
+emerging_tasks.csv,Domain Source,str,0,0.0,3,Occupational Expert
+work_context_categories.csv,Element ID,str,0,0.0,57,4.C.1.a.2.c
+work_context_categories.csv,Element Name,str,0,0.0,57,Public Speaking
+work_context_categories.csv,Scale ID,str,0,0.0,2,CXP
+work_context_categories.csv,Scale Name,str,0,0.0,2,Context (Categories 1-5)
+work_context_categories.csv,Category,int64,0,0.0,5,1
+work_context_categories.csv,Category Description,str,0,0.0,60,Never
+interests_illustrative_occupations.csv,Element ID,str,0,0.0,47,1.B.1.a
+interests_illustrative_occupations.csv,Element Name,str,0,0.0,47,Realistic
+interests_illustrative_occupations.csv,Interest Type,str,0,0.0,2,Career Type
+interests_illustrative_occupations.csv,O*NET-SOC Code,str,0,0.0,164,17-3024.01
+interests_illustrative_occupations.csv,Title,str,0,0.0,164,Robotics Technicians
+essential_skills.csv,O*NET-SOC Code,str,0,0.0,894,11-1011.00
+essential_skills.csv,Title,str,0,0.0,894,Chief Executives
+essential_skills.csv,Element ID,str,0,0.0,10,2.A.1.a
+essential_skills.csv,Element Name,str,0,0.0,10,Reading Comprehension
+essential_skills.csv,Scale ID,str,0,0.0,2,IM
+essential_skills.csv,Scale Name,str,0,0.0,2,Importance
+essential_skills.csv,Data Value,float64,0,0.0,49,4.12
+essential_skills.csv,N,int64,0,0.0,1,8
+essential_skills.csv,Standard Error,float64,0,0.0,41,0.125
+essential_skills.csv,Lower CI Bound,float64,0,0.0,214,3.88
+essential_skills.csv,Upper CI Bound,float64,0,0.0,228,4.37
+essential_skills.csv,Recommend Suppress,str,0,0.0,2,N
+essential_skills.csv,Not Relevant,str,8940,50.0,2,N
+essential_skills.csv,Date,str,0,0.0,16,08/2023
+essential_skills.csv,Domain Source,str,0,0.0,1,Analyst
+sample_of_reported_titles.csv,O*NET-SOC Code,str,0,0.0,907,11-1011.00
+sample_of_reported_titles.csv,Title,str,0,0.0,907,Chief Executives
+sample_of_reported_titles.csv,Reported Job Title,str,0,0.0,6792,CEO (Chief Executive Officer)
+sample_of_reported_titles.csv,Shown in My Next Move,str,0,0.0,2,Y
+transferable_skills_to_work_context.csv,Transferable Skills Element ID,str,0,0.0,12,2.B.1.a
+transferable_skills_to_work_context.csv,Transferable Skills Element Name,str,0,0.0,12,Social Perceptiveness
+transferable_skills_to_work_context.csv,Work Context Element ID,str,0,0.0,20,4.C.1.a.2.c
+transferable_skills_to_work_context.csv,Work Context Element Name,str,0,0.0,20,Public Speaking
+training_and_experience.csv,O*NET-SOC Code,str,0,0.0,878,11-1011.00
+training_and_experience.csv,Title,str,0,0.0,878,Chief Executives
+training_and_experience.csv,Element ID,str,0,0.0,4,3.A.1
+training_and_experience.csv,Element Name,str,0,0.0,4,Related Work Experience
+training_and_experience.csv,Scale ID,str,0,0.0,4,RW
+training_and_experience.csv,Scale Name,str,0,0.0,4,Related Work Experience (Categories 1-11)
+training_and_experience.csv,Category,float64,563,2.16,11,1.0
+training_and_experience.csv,Data Value,float64,0,0.0,4077,0.0
+training_and_experience.csv,N,int64,0,0.0,66,28
+training_and_experience.csv,Standard Error,float64,6290,24.17,12669,0.0
+training_and_experience.csv,Lower CI Bound,float64,11912,45.77,12026,2.343
+training_and_experience.csv,Upper CI Bound,float64,11912,45.77,13048,32.4046
+training_and_experience.csv,Recommend Suppress,str,6290,24.17,2,N
+training_and_experience.csv,Date,str,0,0.0,22,08/2023
+training_and_experience.csv,Domain Source,str,0,0.0,2,Incumbent
+interests_illustrative_activities.csv,Element ID,str,0,0.0,47,1.B.1.a
+interests_illustrative_activities.csv,Element Name,str,0,0.0,47,Realistic
+interests_illustrative_activities.csv,Interest Type,str,0,0.0,2,Career Type
+interests_illustrative_activities.csv,Activity,str,0,0.0,188,Build kitchen cabinets.
+software_skills.csv,O*NET-SOC Code,str,0,0.0,923,11-1011.00
+software_skills.csv,Title,str,0,0.0,923,Chief Executives
+software_skills.csv,Workplace Example,str,0,0.0,8753,Adobe Acrobat
+software_skills.csv,Element ID,str,0,0.0,134,2.E.5.b
+software_skills.csv,Element Name,str,0,0.0,134,Document management software
+software_skills.csv,Hot Technology,str,0,0.0,2,Y
+software_skills.csv,In Demand,str,0,0.0,2,N
+abilities_to_work_context.csv,Abilities Element ID,str,0,0.0,33,1.A.1.a.1
+abilities_to_work_context.csv,Abilities Element Name,str,0,0.0,33,Oral Comprehension
+abilities_to_work_context.csv,Work Context Element ID,str,0,0.0,36,4.C.1.a.2.c
+abilities_to_work_context.csv,Work Context Element Name,str,0,0.0,36,Public Speaking
+scales_reference.csv,Scale ID,str,0,0.0,32,AO
+scales_reference.csv,Scale Name,str,0,0.0,30,Automation
+scales_reference.csv,Minimum,int64,0,0.0,3,1
+scales_reference.csv,Maximum,int64,0,0.0,6,5
+transferable_skills.csv,O*NET-SOC Code,str,0,0.0,894,11-1011.00
+transferable_skills.csv,Title,str,0,0.0,894,Chief Executives
+transferable_skills.csv,Element ID,str,0,0.0,25,2.B.1.a
+transferable_skills.csv,Element Name,str,0,0.0,25,Social Perceptiveness
+transferable_skills.csv,Scale ID,str,0,0.0,2,IM
+transferable_skills.csv,Scale Name,str,0,0.0,2,Importance
+transferable_skills.csv,Data Value,float64,0,0.0,46,4.12
+transferable_skills.csv,N,int64,0,0.0,1,8
+transferable_skills.csv,Standard Error,float64,0,0.0,56,0.125
+transferable_skills.csv,Lower CI Bound,float64,0,0.0,286,3.88
+transferable_skills.csv,Upper CI Bound,float64,0,0.0,311,4.37
+transferable_skills.csv,Recommend Suppress,str,0,0.0,2,N
+transferable_skills.csv,Not Relevant,str,22350,50.0,2,N
+transferable_skills.csv,Date,str,0,0.0,16,08/2023
+transferable_skills.csv,Domain Source,str,0,0.0,1,Analyst
+gwas_to_iwas_to_dwas.csv,GWA Element ID,str,0,0.0,41,4.A.1.a.1
+gwas_to_iwas_to_dwas.csv,GWA Element Name,str,0,0.0,41,Getting Information
+gwas_to_iwas_to_dwas.csv,IWA Element ID,str,0,0.0,332,4.A.1.a.1.a
+gwas_to_iwas_to_dwas.csv,IWA Element Name,str,0,0.0,332,Study details of artistic productions.
+gwas_to_iwas_to_dwas.csv,DWA Element ID,str,0,0.0,2087,4.A.1.a.1.a.1
+gwas_to_iwas_to_dwas.csv,DWA Element Name,str,0,0.0,2087,Review art or design materials.
+essential_skills_to_work_context.csv,Essential Skills Element ID,str,0,0.0,7,2.A.1.a
+essential_skills_to_work_context.csv,Essential Skills Element Name,str,0,0.0,7,Reading Comprehension
+essential_skills_to_work_context.csv,Work Context Element ID,str,0,0.0,22,4.C.1.a.2.h
+essential_skills_to_work_context.csv,Work Context Element Name,str,0,0.0,22,E-Mail
+work_styles_to_work_context.csv,Work Styles Element ID,str,0,0.0,21,1.D.1.a
+work_styles_to_work_context.csv,Work Styles Element Name,str,0,0.0,21,Innovation
+work_styles_to_work_context.csv,Work Context Element ID,str,0,0.0,42,4.C.1.d.1
+work_styles_to_work_context.csv,Work Context Element Name,str,0,0.0,42,Conflict Situations
+education_categories.csv,Element ID,str,0,0.0,1,2.D.1
+education_categories.csv,Element Name,str,0,0.0,1,Required Level of Education
+education_categories.csv,Scale ID,str,0,0.0,1,RL
+education_categories.csv,Scale Name,str,0,0.0,1,Required Level Of Education (Categories 1-12)
+education_categories.csv,Category,int64,0,0.0,12,1
+education_categories.csv,Category Description,str,0,0.0,12,Less than a High School Diploma
+training_and_experience_categories.csv,Element ID,str,0,0.0,3,3.A.1
+training_and_experience_categories.csv,Element Name,str,0,0.0,3,Related Work Experience
+training_and_experience_categories.csv,Scale ID,str,0,0.0,3,RW
+training_and_experience_categories.csv,Scale Name,str,0,0.0,3,Related Work Experience (Categories 1-11)
+training_and_experience_categories.csv,Category,int64,0,0.0,11,1
+training_and_experience_categories.csv,Category Description,str,2,6.9,13,Up to and including 1 month
+work_styles_to_work_activities.csv,Work Styles Element ID,str,0,0.0,21,1.D.1.a
+work_styles_to_work_activities.csv,Work Styles Element Name,str,0,0.0,21,Innovation
+work_styles_to_work_activities.csv,Work Activities Element ID,str,0,0.0,41,4.A.2.b.1
+work_styles_to_work_activities.csv,Work Activities Element Name,str,0,0.0,41,Making Decisions and Solving Problems
+tasks_to_dwas.csv,O*NET-SOC Code,str,0,0.0,923,11-1011.00
+tasks_to_dwas.csv,Title,str,0,0.0,923,Chief Executives
+tasks_to_dwas.csv,Task ID,int64,0,0.0,18796,20461
+tasks_to_dwas.csv,Task,str,0,0.0,17537,"Review and analyze legislation, laws, or public policy and recommend changes to promote or support interests of the general population or special groups."
+tasks_to_dwas.csv,DWA Element ID,str,0,0.0,2083,4.A.2.a.4.i.3
+tasks_to_dwas.csv,DWA Element Name,str,0,0.0,2083,Analyze impact of legal or regulatory changes.
+tasks_to_dwas.csv,Date,str,0,0.0,14,07/2014
+tasks_to_dwas.csv,Domain Source,str,0,0.0,1,Analyst
+abilities.csv,O*NET-SOC Code,str,0,0.0,894,11-1011.00
+abilities.csv,Title,str,0,0.0,894,Chief Executives
+abilities.csv,Element ID,str,0,0.0,52,1.A.1.a.1
+abilities.csv,Element Name,str,0,0.0,52,Oral Comprehension
+abilities.csv,Scale ID,str,0,0.0,2,IM
+abilities.csv,Scale Name,str,0,0.0,2,Importance
+abilities.csv,Data Value,float64,0,0.0,58,4.62
+abilities.csv,N,int64,0,0.0,1,8
+abilities.csv,Standard Error,float64,0,0.0,50,0.183
+abilities.csv,Lower CI Bound,float64,0,0.0,286,4.2664
+abilities.csv,Upper CI Bound,float64,0,0.0,307,4.9836
+abilities.csv,Recommend Suppress,str,0,0.0,2,N
+abilities.csv,Not Relevant,str,46488,50.0,2,N
+abilities.csv,Date,str,0,0.0,22,08/2023
+abilities.csv,Domain Source,str,0,0.0,1,Analyst
+job_zone_reference.csv,Job Zone,int64,0,0.0,4,2
+job_zone_reference.csv,Name,str,0,0.0,4,Job Zone 1-2: Very Little to Some Preparation Needed
+job_zone_reference.csv,Experience,str,0,0.0,4,"Some occupations may need little or no previous experience; others require several months to a year of experience. For example, landscaping and groundskeeping workers might require very little training or previous experience, while agricultural equipment operators can benefit from on-the job training."
+job_zone_reference.csv,Education,str,0,0.0,4,"Usually requires a high school diploma or GED, though some occupations may not."
+job_zone_reference.csv,Job Training,str,0,0.0,4,Ranges from a few days to one year of on-the-job training.
+job_zone_reference.csv,Examples,str,0,0.0,4,"These occupations involve following instructions and often involve using your knowledge and skills to help others. Examples include dishwashers, landscaping and groundskeeping workers, counter and rental clerks, dental laboratory technicians, and security guards."
+job_zone_reference.csv,SVP Range,str,0,0.0,4,(Below 6.0)
+related_occupations.csv,O*NET-SOC Code,str,0,0.0,923,11-1011.00
+related_occupations.csv,Title,str,0,0.0,923,Chief Executives
+related_occupations.csv,Related O*NET-SOC Code,str,0,0.0,920,11-1021.00
+related_occupations.csv,Related Title,str,0,0.0,920,General and Operations Managers
+related_occupations.csv,Relatedness Tier,str,0,0.0,3,Primary-Short
+related_occupations.csv,Index,int64,0,0.0,20,1
+abilities_to_work_activities.csv,Abilities Element ID,str,0,0.0,50,1.A.1.a.1
+abilities_to_work_activities.csv,Abilities Element Name,str,0,0.0,50,Oral Comprehension
+abilities_to_work_activities.csv,Work Activities Element ID,str,0,0.0,41,4.A.1.a.1
+abilities_to_work_activities.csv,Work Activities Element Name,str,0,0.0,41,Getting Information
+level_scale_anchors.csv,Element ID,str,0,0.0,161,1.A.1.a.1
+level_scale_anchors.csv,Element Name,str,0,0.0,160,Oral Comprehension
+level_scale_anchors.csv,Scale ID,str,0,0.0,1,LV
+level_scale_anchors.csv,Scale Name,str,0,0.0,1,Level
+level_scale_anchors.csv,Anchor Value,int64,0,0.0,7,2
+level_scale_anchors.csv,Anchor Description,str,0,0.0,482,Understand a television commercial
+occupation_data.csv,O*NET-SOC Code,str,0,0.0,1016,11-1011.00
+occupation_data.csv,Title,str,0,0.0,1016,Chief Executives
+occupation_data.csv,Description,str,0,0.0,1016,"Determine and formulate policies and provide overall direction of companies or private and public sector organizations within guidelines set up by a board of directors or similar governing body. Plan, direct, or coordinate operational activities at the highest level of management with the help of subordinate executives and staff managers."
+gwas_to_iwas.csv,GWA Element ID,str,0,0.0,41,4.A.1.a.1
+gwas_to_iwas.csv,GWA Element Name,str,0,0.0,41,Getting Information
+gwas_to_iwas.csv,IWA Element ID,str,0,0.0,332,4.A.1.a.1.a
+gwas_to_iwas.csv,IWA Element Name,str,0,0.0,332,Study details of artistic productions.
+content_model_reference.csv,Element ID,str,0,0.0,3006,1
+content_model_reference.csv,Element Name,str,0,0.0,2945,Worker Characteristics
+content_model_reference.csv,Description,str,2419,80.47,587,Personal traits and abilities that affect how people learn and perform at work.
+task_categories.csv,Scale ID,str,0,0.0,1,FT
+task_categories.csv,Scale Name,str,0,0.0,1,Frequency of Task (Categories 1-7)
+task_categories.csv,Category,int64,0,0.0,7,1
+task_categories.csv,Category Description,str,0,0.0,7,Yearly or less
+task_ratings.csv,O*NET-SOC Code,str,0,0.0,894,11-1011.00
+task_ratings.csv,Title,str,0,0.0,894,Chief Executives
+task_ratings.csv,Task ID,int64,0,0.0,17951,8823
+task_ratings.csv,Task,str,0,0.0,16830,"Direct or coordinate an organization's financial or budget activities to fund operations, maximize investments, or increase efficiency."
+task_ratings.csv,Scale ID,str,0,0.0,3,FT
+task_ratings.csv,Scale Name,str,0,0.0,3,Frequency of Task (Categories 1-7)
+task_ratings.csv,Category,float64,35902,22.22,7,1.0
+task_ratings.csv,Data Value,float64,0,0.0,9591,5.92
+task_ratings.csv,N,float64,3105,1.92,203,76.0
+task_ratings.csv,Standard Error,float64,42822,26.51,66918,4.2651
+task_ratings.csv,Lower CI Bound,float64,54375,33.66,78437,1.3474
+task_ratings.csv,Upper CI Bound,float64,54375,33.66,95726,22.4442
+task_ratings.csv,Recommend Suppress,str,41121,25.45,2,N
+task_ratings.csv,Date,str,0,0.0,23,08/2023
+task_ratings.csv,Domain Source,str,0,0.0,3,Incumbent
+task_statements.csv,O*NET-SOC Code,str,0,0.0,923,11-1011.00
+task_statements.csv,Title,str,0,0.0,923,Chief Executives
+task_statements.csv,Task ID,int64,0,0.0,18796,8823
+task_statements.csv,Task,str,0,0.0,17537,"Direct or coordinate an organization's financial or budget activities to fund operations, maximize investments, or increase efficiency."
+task_statements.csv,Task Type,str,845,4.5,2,Core
+task_statements.csv,Incumbents Responding,float64,1190,6.33,163,95.0
+task_statements.csv,Date,str,0,0.0,24,08/2023
+task_statements.csv,Domain Source,str,0,0.0,4,Incumbent
+transferable_skills_to_work_activities.csv,Transferable Skills Element ID,str,0,0.0,23,2.B.1.a
+transferable_skills_to_work_activities.csv,Transferable Skills Element Name,str,0,0.0,23,Social Perceptiveness
+transferable_skills_to_work_activities.csv,Work Activities Element ID,str,0,0.0,31,4.A.4.a.1
+transferable_skills_to_work_activities.csv,Work Activities Element Name,str,0,0.0,31,Interpreting the Meaning of Information for Others
+work_styles.csv,O*NET-SOC Code,str,0,0.0,891,11-1011.00
+work_styles.csv,Title,str,0,0.0,891,Chief Executives
+work_styles.csv,Element ID,str,0,0.0,21,1.D.1.a
+work_styles.csv,Element Name,str,0,0.0,21,Innovation
+work_styles.csv,Scale ID,str,0,0.0,2,DR
+work_styles.csv,Scale Name,str,0,0.0,2,Distinctiveness Rank
+work_styles.csv,Data Value,float64,0,0.0,396,7.0
+work_styles.csv,Date,str,0,0.0,1,12/2025
+work_styles.csv,Domain Source,str,0,0.0,1,AI/Expert
+career_interest_types.csv,O*NET-SOC Code,str,0,0.0,923,11-1011.00
+career_interest_types.csv,Title,str,0,0.0,923,Chief Executives
+career_interest_types.csv,Element ID,str,0,0.0,9,1.B.1.a
+career_interest_types.csv,Element Name,str,0,0.0,9,Realistic
+career_interest_types.csv,Scale ID,str,0,0.0,2,OI
+career_interest_types.csv,Scale Name,str,0,0.0,2,Occupational Interests
+career_interest_types.csv,Data Value,float64,0,0.0,600,1.26
+career_interest_types.csv,Date,str,0,0.0,2,02/2026
+career_interest_types.csv,Domain Source,str,0,0.0,2,Machine Learning/Expert
+work_activities.csv,O*NET-SOC Code,str,0,0.0,894,11-1011.00
+work_activities.csv,Title,str,0,0.0,894,Chief Executives
+work_activities.csv,Element ID,str,0,0.0,41,4.A.1.a.1
+work_activities.csv,Element Name,str,0,0.0,41,Getting Information
+work_activities.csv,Scale ID,str,0,0.0,2,IM
+work_activities.csv,Scale Name,str,0,0.0,2,Importance
+work_activities.csv,Data Value,float64,0,0.0,668,4.56
+work_activities.csv,N,float64,1312,1.79,86,29.0
+work_activities.csv,Standard Error,float64,18532,25.28,8413,0.1559
+work_activities.csv,Lower CI Bound,float64,18550,25.3,30079,4.2369
+work_activities.csv,Upper CI Bound,float64,18550,25.3,29958,4.8756
+work_activities.csv,Recommend Suppress,str,17302,23.6,2,N
+work_activities.csv,Not Relevant,str,36654,50.0,2,N
+work_activities.csv,Date,str,0,0.0,23,08/2023
+work_activities.csv,Domain Source,str,0,0.0,3,Incumbent
+job_titles.csv,O*NET-SOC Code,str,0,0.0,1016,11-1011.00
+job_titles.csv,Title,str,0,0.0,1016,Chief Executives
+job_titles.csv,Job Title,str,0,0.0,46687,Aeronautics Commission Director
+job_titles.csv,Short Title,str,53404,92.81,3316,BD Executive
+job_titles.csv,Source(s),str,0,0.0,105,08
+survey_booklet_locations.csv,Element ID,str,0,0.0,137,2.C.1.a
+survey_booklet_locations.csv,Element Name,str,0,0.0,137,Administration and Management
+survey_booklet_locations.csv,Survey Item Number,str,0,0.0,211,KN01
+survey_booklet_locations.csv,Scale ID,str,0,0.0,19,IM
+survey_booklet_locations.csv,Scale Name,str,0,0.0,18,Importance
+occupation_level_metadata.csv,O*NET-SOC Code,str,0,0.0,878,11-1011.00
+occupation_level_metadata.csv,Title,str,0,0.0,878,Chief Executives
+occupation_level_metadata.csv,Item,str,0,0.0,13,Data Collection Mode
+occupation_level_metadata.csv,Response,str,4638,14.4,44,Paper
+occupation_level_metadata.csv,N,float64,3760,11.68,134,95.0
+occupation_level_metadata.csv,Percent,float64,878,2.73,988,18.9
+occupation_level_metadata.csv,Date,str,0,0.0,22,08/2023
+knowledge.csv,O*NET-SOC Code,str,0,0.0,894,11-1011.00
+knowledge.csv,Title,str,0,0.0,894,Chief Executives
+knowledge.csv,Element ID,str,0,0.0,33,2.C.1.a
+knowledge.csv,Element Name,str,0,0.0,33,Administration and Management
+knowledge.csv,Scale ID,str,0,0.0,2,IM
+knowledge.csv,Scale Name,str,0,0.0,2,Importance
+knowledge.csv,Data Value,float64,0,0.0,676,4.78
+knowledge.csv,N,float64,1056,1.79,81,28.0
+knowledge.csv,Standard Error,float64,14916,25.28,8188,0.1102
+knowledge.csv,Lower CI Bound,float64,15604,26.45,21634,4.5564
+knowledge.csv,Upper CI Bound,float64,15604,26.45,28752,5.0
+knowledge.csv,Recommend Suppress,str,13926,23.6,2,N
+knowledge.csv,Not Relevant,str,29502,50.0,2,N
+knowledge.csv,Date,str,0,0.0,23,08/2023
+knowledge.csv,Domain Source,str,0,0.0,3,Incumbent

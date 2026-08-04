@@ -5,66 +5,80 @@ from config import OUTPUT_PATH
 from loader import get_csv_files, load_csv
 from profiler import profile_dataframe, profile_columns
 from database import create_database, load_table
+from analytics import run_dashboard
 
 
-if __name__ == "__main__":
+def main():
+    """
+    Main application workflow.
+    """
 
-    # -----------------------------
+    # -------------------------------------------------
     # Connect to SQLite database
-    # -----------------------------
+    # -------------------------------------------------
+
     connection = create_database()
 
-    # -----------------------------
-    # Step 1: Get all CSV files
-    # -----------------------------
+    # -------------------------------------------------
+    # Discover CSV files
+    # -------------------------------------------------
+
     csv_files = get_csv_files()
 
-    # Store file-level profiles
     all_profiles = []
-
-    # Store column-level profiles
     all_column_profiles = []
 
-    # -----------------------------
-    # Step 2: Process every CSV
-    # -----------------------------
+    # -------------------------------------------------
+    # Process every dataset
+    # -------------------------------------------------
+
     for file in csv_files:
 
         dataframe = load_csv(file)
 
-        # Convert filename to table name
         table_name = os.path.splitext(file)[0]
 
-        # Load DataFrame into SQLite
-        load_table(connection, dataframe, table_name)
+        load_table(
+            connection,
+            dataframe,
+            table_name
+        )
 
-        # File-level profile
-        profile = profile_dataframe(dataframe, file)
+        profile = profile_dataframe(
+            dataframe,
+            file
+        )
+
         all_profiles.append(profile)
 
-        # Column-level profile
-        column_profiles = profile_columns(dataframe, file)
+        column_profiles = profile_columns(
+            dataframe,
+            file
+        )
+
         all_column_profiles.extend(column_profiles)
 
-    # -----------------------------
-    # Create summary report
-    # -----------------------------
+    # -------------------------------------------------
+    # Save profile summary
+    # -------------------------------------------------
+
     summary_df = pd.DataFrame(all_profiles)
 
     os.makedirs(OUTPUT_PATH, exist_ok=True)
 
     summary_df.to_csv(
-        "outputs/profile_summary.csv",
+        os.path.join(OUTPUT_PATH, "profile_summary.csv"),
         index=False
     )
 
-    # -----------------------------
-    # Create column profile report
-    # -----------------------------
+    # -------------------------------------------------
+    # Save column profile
+    # -------------------------------------------------
+
     column_df = pd.DataFrame(all_column_profiles)
 
     column_df.to_csv(
-        "outputs/column_profile.csv",
+        os.path.join(OUTPUT_PATH, "column_profile.csv"),
         index=False
     )
 
@@ -74,8 +88,20 @@ if __name__ == "__main__":
     print("\n✅ Column Profile Created")
     print("📄 outputs/column_profile.csv")
 
-    # -----------------------------
-    # Close database connection
-    # -----------------------------
+    # -------------------------------------------------
+    # Close ETL connection
+    # -------------------------------------------------
+
     connection.close()
+
     print("\n✅ Database connection closed.")
+
+    # -------------------------------------------------
+    # Launch analytics dashboard
+    # -------------------------------------------------
+
+    run_dashboard()
+
+
+if __name__ == "__main__":
+    main()

@@ -1,28 +1,23 @@
-import os
 import sqlite3
-import pandas as pd
 
 from config import DATABASE_FILE
 
 
 def create_database():
     """
-    Creates a connection to the SQLite database.
+    Creates and returns a SQLite connection.
     """
-    
-    database_path = DATABASE_FILE
 
-    connection = sqlite3.connect(database_path)
-    
-    print(f"Connected to database: {database_path}")
-    
+    connection = sqlite3.connect(DATABASE_FILE)
+
     return connection
+
 
 def load_table(connection, dataframe, table_name):
     """
-    Loads a Pandas DataFrame into a SQLite table.
+    Loads a DataFrame into SQLite.
     """
-    
+
     dataframe.to_sql(
         table_name,
         connection,

@@ -9,7 +9,7 @@
 
 ![AI Career Intelligence Banner](assets/banner.png)
 
-> Transforming 41 O*NET datasets into an AI-powered Career Intelligence Platform using Python, SQL, SQLite, Power BI, Retrieval-Augmented Generation (RAG), and Large Language Models.
+> Transforming 45 O*NET datasets into an AI-powered Career Intelligence Platform using Python, SQL, SQLite, Analytics Engineering, Power BI, Retrieval-Augmented Generation (RAG), and Large Language Models.
 
 ---
 
@@ -32,29 +32,32 @@ Rather than jumping straight into AI, this project focuses on building a strong 
 # 🏗 Current Architecture
 
 ```text
-                  O*NET CSV Files
-                         │
-                         ▼
-              Automated Data Profiling
-                         │
-                         ▼
-             Data Quality Validation
-                         │
-                         ▼
-              SQLite ETL Pipeline
-                         │
-                         ▼
-             SQLite Relational Database
-                  (41 Tables)
-                         │
-                         ▼
-                SQL Analytics Layer
-                         │
-                         ▼
-               Power BI Dashboards
-                         │
-                         ▼
-        AI Career Intelligence Assistant
+                 45 O*NET CSV Files
+                        │
+                        ▼
+           Automated Data Profiling
+                        │
+                        ▼
+          Data Quality Validation
+                        │
+                        ▼
+            SQLite ETL Pipeline
+                        │
+                        ▼
+        SQLite Relational Database
+               (45 Tables)
+                        │
+                        ▼
+            SQL Query Engine
+                        │
+                        ▼
+          Analytics Dashboard
+                        │
+                        ▼
+          Power BI Dashboards
+                        │
+                        ▼
+     AI Career Intelligence Assistant
 ```
 
 ---
@@ -83,6 +86,8 @@ AI-Career-Intelligence/
 │   ├── loader.py
 │   ├── profiler.py
 │   ├── database.py
+│   ├── queries.py
+│   ├── analytics.py
 │   └── main.py
 │
 ├── README.md
@@ -94,22 +99,24 @@ AI-Career-Intelligence/
 
 # 🚀 Project Status
 
-| Milestone | Status |
-|------------|--------|
-| Project Setup | ✅ Complete |
-| Modular Python Architecture | ✅ Complete |
-| Automated CSV Discovery | ✅ Complete |
-| File-Level Data Profiling | ✅ Complete |
-| Column-Level Data Profiling | ✅ Complete |
-| Missing Value Analysis | ✅ Complete |
-| Duplicate Detection | ✅ Complete |
-| Automated Report Generation | ✅ Complete |
-| SQLite ETL Pipeline | ✅ Complete |
-| SQLite Database (41 Tables) | ✅ Complete |
-| SQL Analytics Layer | 🚧 In Progress |
-| Power BI Dashboards | ⏳ Planned |
-| Retrieval-Augmented Generation (RAG) | ⏳ Planned |
-| AI Career Intelligence Assistant | ⏳ Planned |
+| Milestone                            | Status     |
+| ------------------------------------ | ---------- |
+| Project Setup                        | ✅ Complete |
+| Modular Python Architecture          | ✅ Complete |
+| Automated CSV Discovery              | ✅ Complete |
+| File-Level Data Profiling            | ✅ Complete |
+| Column-Level Data Profiling          | ✅ Complete |
+| Missing Value Analysis               | ✅ Complete |
+| Duplicate Detection                  | ✅ Complete |
+| Automated Report Generation          | ✅ Complete |
+| SQLite ETL Pipeline                  | ✅ Complete |
+| SQLite Database (45 Tables)          | ✅ Complete |
+| SQL Query Engine                     | ✅ Complete |
+| Analytics Dashboard                  | ✅ Complete |
+| Power BI Dashboards                  | ⏳ Planned  |
+| Retrieval-Augmented Generation (RAG) | ⏳ Planned  |
+| AI Career Intelligence Assistant     | ⏳ Planned  |
+
 
 ---
 
@@ -152,15 +159,44 @@ The project now includes a complete ETL pipeline that automatically converts the
 Current capabilities include:
 
 - Automatic SQLite database creation
-- Loading all **41** datasets into relational tables
-- Rebuilding the database whenever the pipeline is executed
-- Providing the foundation for SQL analytics and future AI applications
+- Loading all **45** O*NET datasets into relational tables
+- Automatic database rebuilding whenever the pipeline executes
+- SQL query execution through a reusable query engine
+- Analytics dashboard powered entirely by SQL and Python
 
-This milestone marks the completion of the project's first end-to-end ETL pipeline.
+This milestone completes the project's first end-to-end ETL and analytics pipeline.
+
+---
+
+# 📈 SQL Analytics Dashboard
+
+The project now includes a modular SQL Analytics Engine capable of querying and analyzing occupational data directly from the SQLite database.
+
+Current dashboard capabilities include:
+
+- Database statistics
+- Occupation counts
+- Knowledge record counts
+- Essential skill counts
+- Work activity counts
+- Occupation search
+- Engineering occupation exploration
+- Scientist occupation exploration
+
+The analytics layer has been designed with a modular architecture consisting of:
+
+- `queries.py` – SQL query execution
+- `analytics.py` – Dashboard presentation
+- `main.py` – Application orchestration
+
+This architecture provides a strong foundation for future features such as career comparison, skill gap analysis, semantic search, and AI-powered recommendations.
 
 ---
 
 # 🚀 Getting Started
+
+Populate 45 relational tables
+Launch the SQL Analytics Dashboard
 
 ## Clone the repository
 
@@ -237,10 +273,12 @@ This project demonstrates an end-to-end modern data and AI workflow, including:
 
 # 🚀 Upcoming Milestones
 
-- ✅ Data Profiling
+- ✅ Data Profiling Engine
 - ✅ SQLite ETL Pipeline
-- ⏳ SQL Analytics
-- ⏳ Data Warehouse Views
+- ✅ SQL Analytics Engine
+- ⏳ Occupation Explorer
+- ⏳ Career Comparison Engine
+- ⏳ Skill Gap Analysis
 - ⏳ Power BI Dashboards
 - ⏳ Semantic Search
 - ⏳ Vector Database
