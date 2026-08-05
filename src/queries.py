@@ -74,3 +74,31 @@ def list_tables():
     """
 
     return run_query(query)
+
+def explore_occupations(keyword):
+    """
+    Searches occupations using a keyword.
+    Returns matching occupation titles.
+    """
+
+    query = f"""
+    SELECT Title
+    FROM occupation_data
+    WHERE Title LIKE '%{keyword}%'
+    ORDER BY Title;
+    """
+
+    return run_query(query)
+
+def get_occupation_profile(title):
+    """
+    Returns the basic profile of an occupation.
+    """
+
+    query = f"""
+    SELECT *
+    FROM occupation_data
+    WHERE Title = '{title}';
+    """
+
+    return run_query(query)

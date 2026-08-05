@@ -2,6 +2,8 @@ from queries import (
     preview_occupations,
     count_records,
     search_occupations,
+    explore_occupations,
+    get_occupation_profile,
     list_tables
 )
 
@@ -68,7 +70,49 @@ def print_scientist_occupations():
     print(LINE)
 
     print(search_occupations("Scientist").to_string(index=False))
+    
+    
+def occupation_explorer():
+    """
+    Interactive occupation search.
+    """
 
+    print("\n" + LINE)
+    print("🔍 OCCUPATION EXPLORER")
+    print(LINE)
+
+    keyword = input("\nEnter an occupation keyword: ").strip()
+
+    results = explore_occupations(keyword)
+
+    print(f"\nFound {len(results)} occupation(s) matching '{keyword}'\n")
+
+    if results.empty:
+        print("No occupations found.")
+        return
+
+    for index, row in enumerate(results["Title"], start=1):
+        print(f"{index}. {row}")
+def occupation_profile():
+    """
+    Displays the profile of a selected occupation.
+    """
+
+    print("\n" + LINE)
+    print("📄 OCCUPATION PROFILE")
+    print(LINE)
+
+    title = input("\nEnter occupation title: ").strip()
+
+    result = get_occupation_profile(title)
+
+    if result.empty:
+        print("\n❌ Occupation not found.")
+        return
+
+    print("\nOccupation Details\n")
+
+    print(result.to_string(index=False))
 
 def run_dashboard():
     """
@@ -79,7 +123,11 @@ def run_dashboard():
     print_occupation_preview()
     print_engineering_occupations()
     print_scientist_occupations()
-
+    
+    occupation_explorer()
+    
+    occupation_profile()
+    
     print("\n" + LINE)
     print("✅ Analytics Dashboard Loaded Successfully")
     print(LINE)

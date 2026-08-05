@@ -54,11 +54,15 @@ Rather than jumping straight into AI, this project focuses on building a strong 
           Analytics Dashboard
                         │
                         ▼
+          Occupation Explorer
+                        │
+                        ▼
           Power BI Dashboards
                         │
                         ▼
      AI Career Intelligence Assistant
 ```
+
 
 ---
 
@@ -99,23 +103,25 @@ AI-Career-Intelligence/
 
 # 🚀 Project Status
 
-| Milestone                            | Status     |
-| ------------------------------------ | ---------- |
-| Project Setup                        | ✅ Complete |
-| Modular Python Architecture          | ✅ Complete |
-| Automated CSV Discovery              | ✅ Complete |
-| File-Level Data Profiling            | ✅ Complete |
-| Column-Level Data Profiling          | ✅ Complete |
-| Missing Value Analysis               | ✅ Complete |
-| Duplicate Detection                  | ✅ Complete |
-| Automated Report Generation          | ✅ Complete |
-| SQLite ETL Pipeline                  | ✅ Complete |
-| SQLite Database (45 Tables)          | ✅ Complete |
-| SQL Query Engine                     | ✅ Complete |
-| Analytics Dashboard                  | ✅ Complete |
-| Power BI Dashboards                  | ⏳ Planned  |
-| Retrieval-Augmented Generation (RAG) | ⏳ Planned  |
-| AI Career Intelligence Assistant     | ⏳ Planned  |
+| Milestone                            | Status         |
+| ------------------------------------ | -------------- |
+| Project Setup                        | ✅ Complete     |
+| Modular Python Architecture          | ✅ Complete     |
+| Automated CSV Discovery              | ✅ Complete     |
+| File-Level Data Profiling            | ✅ Complete     |
+| Column-Level Data Profiling          | ✅ Complete     |
+| Missing Value Analysis               | ✅ Complete     |
+| Duplicate Detection                  | ✅ Complete     |
+| Automated Report Generation          | ✅ Complete     |
+| SQLite ETL Pipeline                  | ✅ Complete     |
+| SQLite Database (45 Tables)          | ✅ Complete     |
+| SQL Query Engine                     | ✅ Complete     |
+| Analytics Dashboard                  | ✅ Complete     |
+| **Interactive Occupation Explorer**  | ✅ Complete     |
+| Occupation Intelligence Engine       | 🚧 In Progress |
+| Power BI Dashboards                  | ⏳ Planned      |
+| Retrieval-Augmented Generation (RAG) | ⏳ Planned      |
+| AI Career Intelligence Assistant     | ⏳ Planned      |
 
 
 ---
@@ -190,6 +196,24 @@ The analytics layer has been designed with a modular architecture consisting of:
 - `main.py` – Application orchestration
 
 This architecture provides a strong foundation for future features such as career comparison, skill gap analysis, semantic search, and AI-powered recommendations.
+
+---
+
+# 🔍 Occupation Explorer
+
+The platform now includes an interactive Occupation Explorer that allows users to search the O*NET database directly from the terminal.
+
+Current capabilities include:
+
+- Interactive occupation search
+- Keyword-based filtering
+- Occupation profile lookup
+- Real-time SQL-powered search
+- Dynamic result reporting
+
+This marks the project's transition from a static analytics dashboard to an interactive career exploration application.
+
+Future versions will expand this feature into a complete Occupation Intelligence Engine with career comparison, skill analysis, and AI-powered recommendations.
 
 ---
 
@@ -275,8 +299,9 @@ This project demonstrates an end-to-end modern data and AI workflow, including:
 
 - ✅ Data Profiling Engine
 - ✅ SQLite ETL Pipeline
-- ✅ SQL Analytics Engine
-- ⏳ Occupation Explorer
+- ✅ SQL Analytics Dashboard
+- ✅ Interactive Occupation Explorer
+- 🚧 Occupation Intelligence Engine
 - ⏳ Career Comparison Engine
 - ⏳ Skill Gap Analysis
 - ⏳ Power BI Dashboards
